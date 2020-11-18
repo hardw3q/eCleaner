@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "107069110387",
+    "firebase_url": "https://ecleaner-f8c25.firebaseio.com",
+    "project_id": "ecleaner-f8c25",
+    "storage_bucket": "ecleaner-f8c25.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:107069110387:android:bd96f4f628314c1f949206",
+        "android_client_info": {
+          "package_name": "com.phonecleaner.icecleaner"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "107069110387-4qav6u4nnpdje5rejr9tla43qqv32qe6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.phonecleaner.icecleaner",
+            "certificate_hash": "871ba554ca00375df005f5895d8b36ca77b5e059"
+          }
+        },
+        {
+          "client_id": "107069110387-k6eibkr7mg3ufaq9hmqhfjpbpkeg25ga.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCQXpJUSBV32ITRTz_pGsVAvT5QYdW6h3s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "107069110387-k6eibkr7mg3ufaq9hmqhfjpbpkeg25ga.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
