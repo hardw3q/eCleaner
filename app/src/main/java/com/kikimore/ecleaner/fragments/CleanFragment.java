@@ -107,7 +107,6 @@ public class CleanFragment extends BaseFragment {
         mRotateloadingApks = (RotateLoading) view.findViewById(R.id.rotateloadingApks);
         mRotateloadingCache = (RotateLoading) view.findViewById(R.id.rotateloadingCache);
         mRotateloadingDownloadFiles = (RotateLoading) view.findViewById(R.id.rotateloadingDownload);
-        mRotateloadingLargeFiles = (RotateLoading) view.findViewById(R.id.rotateloadingLargeFiles);
         mRotateloadingAppCache = view.findViewById(R.id.rotateloadingAppCache);
         mRotateloadingAppData = view.findViewById(R.id.rotateloadingAppData);
 
@@ -217,7 +216,6 @@ public class CleanFragment extends BaseFragment {
         mRotateloadingApks.start();
         mRotateloadingCache.start();
         mRotateloadingDownloadFiles.start();
-        mRotateloadingLargeFiles.start();
         mRotateloadingAppData.start();
         mRotateloadingAppCache.start();
     }
@@ -546,13 +544,13 @@ public class CleanFragment extends BaseFragment {
                     mGroupItems.add(groupItem);
                 }
                 mRotateloadingDownloadFiles.stop();
-                getLargeFile();
+                loadApplicationData();
             }
         });
         mScanDownLoadFiles.execute();
     }
 
-    private void getLargeFile() {
+    /*private void getLargeFile() {
         if (mScanLargeFiles != null
                 && mScanLargeFiles.getStatus() == AsyncTask.Status.RUNNING) {
             return;
@@ -582,11 +580,10 @@ public class CleanFragment extends BaseFragment {
                     mGroupItems.add(groupItem);
                 }
                 mRotateloadingLargeFiles.stop();
-                loadApplicationData();
             }
         });
         mScanLargeFiles.execute();
-    }
+    } */
 
     private void updateAdapter() {
         if (mGroupItems.size() != 0) {
